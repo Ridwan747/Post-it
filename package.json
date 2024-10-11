@@ -1,0 +1,18 @@
+{
+  "name": "social-video-posting-app",
+  "version": "1.0.0",
+  "description": "App for posting videos with captions to multiple social media accounts.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "mongoose": "^8.7.0",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

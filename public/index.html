@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Social Media Video Posting App">
+    <title>Social Video Posting App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Social Media Video Posting App</h1>
+        </header>
+        <section class="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="button" onclick="handleLogin()">Login</button>
+            </form>
+        </section>
+        <section class="upload-section">
+            <h2>Upload Video</h2>
+            <form id="upload-form" enctype="multipart/form-data">
+                <label for="title">Video Title:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="video">Choose a video file:</label>
+                <input type="file" id="video" name="video" accept="video/*" required>
+                <button type="button" onclick="handleUpload()">Upload</button>
+            </form>
+        </section>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
